@@ -13,7 +13,7 @@
 
 ## Description
 
-An obnixously cute Node.js application to use if you are bad at remembering things, want to get your thoughts organized, need a place to vent, help yourself study, write your grocery list, etc. Take notes as you please about whatever you want. 
+An obnoxiously cute Node.js application to use if you are bad at remembering things, want to get your thoughts organized, need a place to vent, help yourself study, write your grocery list, etc. Take notes as you please about whatever you want. 
 
 ## Deployed Link
 
