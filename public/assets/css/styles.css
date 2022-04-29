@@ -37,6 +37,7 @@ h4 {
 
 .footer {
   color: palevioletred;
+  padding-bottom: 20px;
 }
 
 .save-note {
@@ -112,30 +113,34 @@ h4 {
 }
 
 /* icon images */
-.rainbow {
+.sticker {
+  opacity: 0.80;
+}
+
+#rainbow {
   position: absolute;
   z-index: 3;
   right: 65px;
-  top: 15em;
+  top: 11em;
 }
 
-.hearts {
+#hearts {
   position: absolute;
   z-index: 2;
-  left: 95px;
-  padding-top: 40px;
+  top: 7em;
+  left: 30px;
   transform: rotate(-10deg);
 }
 
-.hearts2 {
+#hearts2 {
   position: absolute;
   z-index: 2;
-  bottom: 20em;
+  bottom: 17em;
   right: 10em;
   transform: rotate(10deg);
 }
 
-.bear {
+#bear {
   position: absolute;
   z-index: 3;
   right: 55px;
@@ -143,7 +148,7 @@ h4 {
   transform: rotate(10deg);
 }
 
-.cherry {
+#cherry {
   position: absolute;
   z-index: 3;
   padding-top: 20px;
@@ -151,19 +156,55 @@ h4 {
   transform: rotate(-10deg);
 }
 
-.butterfly {
-  /* margin: 20px;
-  padding-top: 30px;
-  padding-left: 10px; */
+#butterfly {
   position: absolute;
   z-index: 2;
   bottom: 40px;
   left: 50px;
 }
 
-.lock {
+#lock {
   position: absolute;
   z-index: 2;
   padding-top: 10px;
-  right: 30em;
+  right: 28em;
+  transform: rotate(10deg);
+}
+
+#berry {
+  position: absolute;
+  z-index: 2;
+  right: 10em;
+  bottom: 35em;
+  transform: rotate(10deg);
+}
+
+#bunny {
+  position: absolute;
+  z-index: 2;
+  top: 20em;
+  left: 10em;
+}
+
+#stars {
+  position: absolute;
+  z-index: 2;
+  right: 5em;
+  bottom: 30em;
+}
+
+#cupcake {
+  position: absolute;
+  z-index: 2;
+  top: 35em;
+  left: 7em;
+  transform: rotate(10deg);
+}
+
+#mushroom {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  right: 48em;
+  transform: rotate(10deg);
 }
