@@ -3,7 +3,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 // helper to generate unique ids
-const { uuid } = require("uuidv4");
+const { v4: uuidv4 } = require("uuid");
 var dbData = require("./db/db.json");
 
 // Set up Express
@@ -56,7 +56,7 @@ app.post("/api/notes", (req, res) => {
       title,
       text,
       // give each note a unique id
-      id: uuid(),
+      id: uuidv4(),
     };
 
     fs.readFile("./db/db.json", "utf8", (err, data) => {

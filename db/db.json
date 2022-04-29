@@ -2,5 +2,10 @@
     {
         "title": "Test Title",
         "text": "Test text"
+    },
+    {
+        "title": "A note",
+        "text": "meow",
+        "id": "0ef45294-0ee7-4095-8e46-098238137d70"
     }
 ]

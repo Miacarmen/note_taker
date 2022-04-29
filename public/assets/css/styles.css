@@ -3,6 +3,40 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #cbc3e3;
+}
+
+.navbar {
+  background-color: palevioletred;
+  color: lavenderblush;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  color: lavenderblush;
+}
+
+.btn {
+  background-color: palevioletred;
+  color: lavenderblush;
+}
+
+.btn:hover {
+  background-color: rgb(117, 230, 219);
+  color: palevioletred;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.smalltxt {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.footer {
+  color: palevioletred;
 }
 
 .save-note {
@@ -75,4 +109,61 @@ body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+}
+
+/* icon images */
+.rainbow {
+  position: absolute;
+  z-index: 3;
+  right: 65px;
+  top: 15em;
+}
+
+.hearts {
+  position: absolute;
+  z-index: 2;
+  left: 95px;
+  padding-top: 40px;
+  transform: rotate(-10deg);
+}
+
+.hearts2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 20em;
+  right: 10em;
+  transform: rotate(10deg);
+}
+
+.bear {
+  position: absolute;
+  z-index: 3;
+  right: 55px;
+  bottom: 45px;
+  transform: rotate(10deg);
+}
+
+.cherry {
+  position: absolute;
+  z-index: 3;
+  padding-top: 20px;
+  left: 30em;
+  transform: rotate(-10deg);
+}
+
+.butterfly {
+  /* margin: 20px;
+  padding-top: 30px;
+  padding-left: 10px; */
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 50px;
+}
+
+.lock {
+  position: absolute;
+  z-index: 2;
+  padding-top: 10px;
+  right: 30em;
 }
