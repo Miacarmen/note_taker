@@ -2,10 +2,10 @@
 
 ## Table of Content
 * Description
+* Deployed Link
 * Installation
 * Tools
 * Dependencies
-* Deployed Link
 * Usage
 * Credits
 * GitHub Link
@@ -14,6 +14,10 @@
 ## Description
 
 An obnixously cute Node.js application to use if you are bad at remembering things, want to get your thoughts organized, need a place to vent, help yourself study, write your grocery list, etc. Take notes as you please about whatever you want. 
+
+## Deployed Link
+
+* [See Live Site Here](https://super-girly-notetaker.herokuapp.com/)
 
 ## Installation
 
@@ -56,9 +60,6 @@ npm i nodemon
 * [UUID](https://www.npmjs.com/package/uuid)
 * [Nodemon](https://www.npmjs.com/package/nodemon)
 
-## Deployed Link
-
-* [See Live Site](#)
 
 ## Usage
 
