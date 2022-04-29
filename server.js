@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 // helper to generate unique ids
 const { v4: uuidv4 } = require("uuid");
-var dbData = require("./db/db.json");
+var notes = require("./db/db.json");
 
 // Set up Express
 const app = express();
@@ -65,7 +65,7 @@ app.post("/api/notes", (req, res) => {
       } else {
         const parsedNotes = JSON.parse(data);
         parsedNotes.push(newNote);
-        dbData = parsedNotes;
+        notes = parsedNotes;
 
         fs.writeFile(
           "./db/db.json",
