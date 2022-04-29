@@ -94,16 +94,33 @@ app.post("/api/notes", (req, res) => {
 // DELETE /api/notes/:id should receive a query parameter that contains the unique id of a note to delete
 app.delete("/api/notes/:id", (req, res) => {
     console.info(`${req.method} request received for notes`);
+    // remove the note with the given id property
     let noteId = req.params.id;
     console.log(noteId);
+  // read all notes from the db.json file
+    fs.readFile('./db/db.json', "utf8", (err, data) => {
+      if(err) {
+        console.log(err);
+      } else {
+        let noteData = JSON.parse(data);
+        for(let i = 0; i < noteData.length; i++) {
+          if(noteId == noteData[i].id) {
+            noteData.splice(i, 1);
+            // rewrite the notes to the db.json file
+            fs.writeFile("./db/db.json", JSON.stringify(noteData, null, 4), (err) => {
+              if(err) {
+                console.log(err);
+              } else {
+                console.log("Note has been deleted");
+              }
+            });
+          };
+        };
+      };
+    });
+    res.end();
+});
 
-    readFile('./db/db.json',)
-})
-// readl all notes from the db.json file
-
-// remove the note with the given id property
-
-// rewrite the notes to the db.json file
 
 // Fallback route if user attempts to visit routes that don't exsist
 app.get("*", (req, res) => {
